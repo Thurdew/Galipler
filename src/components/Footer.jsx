@@ -14,7 +14,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">İletişim</h3>
             <ul className="text-sm text-gray-300 space-y-2">
               <li>📍 İçerenköy, Özçelik Sk. No:11, 34752 Ataşehir/İstanbul</li>
-              <li>📞 +90 212 123 45 67</li>
+              <li>📞 +90 216 572 43 40</li>
               <li>✉️ info@galipleryapi.com</li>
             </ul>
           </div>

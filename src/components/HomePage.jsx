@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { X, ArrowLeft, ArrowRight } from 'lucide-react';
-
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageCircle,
+} from "lucide-react";
 const products = [
   { name: 'Ferforje', image: '/images/11.jpg' },
   { name: 'Köşebent', image: '/images/13.jpg' },
@@ -170,30 +175,66 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* İletişim */}
       <section id="iletisim" className="py-16 bg-white px-4 md:px-16">
-        <h2 className="text-4xl font-bold text-center mb-6">İLETİŞİM</h2>
-        <p className="text-lg text-center max-w-3xl mx-auto mb-10 text-gray-700">
-          Bizimle iletişime geçmekten çekinmeyin! Sorularınız için e-posta veya telefon numaramız üzerinden bize ulaşabilirsiniz.
-        </p>
-        <div className="text-center text-gray-700 space-y-2">
-          <p><strong>Adres:</strong> İçerenköy, Özçelik Sk. No:11, 34752 Ataşehir/İstanbul</p>
-          <p><strong>Telefon:</strong> +90 212 123 45 67</p>
-          <p><strong>E-posta:</strong> info@galipleryapi.com</p>
-        </div>
-        <div className="mt-10 flex justify-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753.1560504597555!2d29.109431720127844!3d40.9678107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac6435b8936cf%3A0xc7b7904776eb5321!2sGalipler%20A.%C5%9E.%20Boru-Profil-Sac!5e0!3m2!1str!2str!4v1746636029684!5m2!1str!2str"
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-      </section>
+  <h2 className="text-4xl font-bold text-center mb-6">İLETİŞİM</h2>
+  <p className="text-lg text-center max-w-3xl mx-auto mb-10 text-gray-700">
+    Bizimle iletişime geçmekten çekinmeyin! Sorularınız için e-posta veya telefon numaramız üzerinden bize ulaşabilirsiniz.
+  </p>
+
+  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
+    {/* İletişim Bilgileri */}
+    <div className="w-full md:w-1/2 text-gray-700 space-y-6 text-lg">
+      <p className="flex items-start gap-2">
+        <MapPin className="text-yellow-600 mt-1" />
+        <span><strong>Adres:</strong> İçerenköy, Özçelik Sk. No:11, 34752 Ataşehir/İstanbul</span>
+      </p>
+
+      <p className="flex items-start gap-2">
+        <Phone className="text-blue-600 mt-1" />
+        <span>
+          <strong>Dükkan Telefonu:</strong>{' '}
+          <a href="tel:+902165724340" className="text-blue-600 hover:underline">+90 216 572 43 40</a>{' '}
+          |{' '}
+         
+        </span>
+      </p>
+
+      <p className="flex items-start gap-2">
+        <Phone className="text-blue-600 mt-1" />
+        <span>
+          <strong>Özel Telefon:</strong>{' '}
+          <a href="tel:+905414894821" className="text-blue-600 hover:underline">+90 541 489 48 21</a>{' '}
+          |{' '}
+          <a href="https://wa.me/905414894821" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">
+            WhatsApp
+          </a>
+        </span>
+      </p>
+
+      <p className="flex items-start gap-2">
+        <Mail className="text-red-600 mt-1" />
+        <span>
+          <strong>E-posta:</strong>{' '}
+          <a href="mailto:info@galipleryapi.com" className="text-blue-600 hover:underline">info@galipleryapi.com</a>
+        </span>
+      </p>
     </div>
+
+    {/* Harita */}
+    <div className="w-full md:w-1/2 flex justify-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753.1560504597555!2d29.109431720127844!3d40.9678107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac6435b8936cf%3A0xc7b7904776eb5321!2sGalipler%20A.%C5%9E.%20Boru-Profil-Sac!5e0!3m2!1str!2str!4v1746636029684!5m2!1str!2str"
+        width="100%"
+        height="400"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+</div>
   );
 };
 

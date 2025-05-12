@@ -189,20 +189,11 @@ const HomePage = () => {
         <span><strong>Adres:</strong> İçerenköy, Özçelik Sk. No:11, 34752 Ataşehir/İstanbul</span>
       </p>
 
-      <p className="flex items-start gap-2">
-        <Phone className="text-blue-600 mt-1" />
-        <span>
-          <strong>Dükkan Telefonu:</strong>{' '}
-          <a href="tel:+902165724340" className="text-blue-600 hover:underline">+90 216 572 43 40</a>{' '}
-          |{' '}
-         
-        </span>
-      </p>
 
-      <p className="flex items-start gap-2">
+       <p className="flex items-start gap-2">
         <Phone className="text-blue-600 mt-1" />
         <span>
-          <strong>Özel Telefon:</strong>{' '}
+          
           <a href="tel:+905414894821" className="text-blue-600 hover:underline">+90 541 489 48 21</a>{' '}
           |{' '}
           <a href="https://wa.me/905414894821" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">
@@ -210,6 +201,17 @@ const HomePage = () => {
           </a>
         </span>
       </p>
+
+      <p className="flex items-start gap-2">
+        <Phone className="text-blue-600 mt-1" />
+        <span>
+          <a href="tel:+902165724340" className="text-blue-600 hover:underline">+90 216 572 43 40</a>{' '}
+          |{' '}
+         
+        </span>
+      </p>
+
+      
 
       <p className="flex items-start gap-2">
         <Mail className="text-red-600 mt-1" />

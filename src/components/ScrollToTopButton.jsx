@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { ArrowUp } from 'lucide-react';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 300);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -27,15 +24,18 @@ const ScrollToTopButton = () => {
     <button
       id="scrollToTopBtn"
       title="Yukarı Çık"
-      className={`fixed bottom-10 right-10 z-50 bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 text-white p-6 rounded-full shadow-lg hover:scale-110 transform transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      aria-label="Scroll to top"
       onClick={scrollToTop}
-      style={{
-        width: '80px',
-        height: '80px',
-        padding: '20px',
-      }}
+      className={`fixed bottom-8 right-8 z-50 w-14 h-14 bg-gradient-to-br from-blue-500 via-blue-600 to-purple-600 text-white rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-500 ease-out flex items-center justify-center group ${
+        isVisible
+          ? 'opacity-100 translate-y-0 scale-100'
+          : 'opacity-0 translate-y-10 scale-0 pointer-events-none'
+      }`}
     >
-      <i className="fas fa-chevron-up text-4xl"></i> {/* Chevron Up icon */}
+      <ArrowUp
+        className="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300"
+      />
+      <span className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-0 group-hover:opacity-30 animate-ping"></span>
     </button>
   );
 };

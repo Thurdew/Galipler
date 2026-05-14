@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Admin paneline crawler erişimi engelle
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap konumu
+Sitemap: https://galipler.com/sitemap.xml

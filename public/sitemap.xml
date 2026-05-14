@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://galipler.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2026-04-28</lastmod>
+  </url>
+
+  <!-- Ürün Listeleme Sayfası -->
+  <url>
+    <loc>https://galipler.com/urunler</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Ürün Sayfaları -->
+  <url>
+    <loc>https://galipler.com/urunler/ferforje</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/kosebent</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/sac</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/islemeli-profil</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/boru</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/i-demiri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/u-demiri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/trapez-sac</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/elektrot</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/osb-levha</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/tekerlek</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://galipler.com/urunler/makara</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog (blog yazıları eklendikçe buraya da eklenmeli) -->
+  <url>
+    <loc>https://galipler.com/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

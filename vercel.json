@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/api/products/:param", "destination": "/api/products?param=:param" },
+    { "source": "/api/blog/:param",     "destination": "/api/blog?param=:param" },
+    { "source": "/api/admin/login",     "destination": "/api/admin" },
+    { "source": "/(.*)",                "destination": "/" }
   ]
 }
